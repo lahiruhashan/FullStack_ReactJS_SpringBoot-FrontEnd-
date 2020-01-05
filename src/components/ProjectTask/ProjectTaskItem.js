@@ -18,9 +18,9 @@ class ProjectTaskItem extends Component {
         <div className="card-body bg-light">
           <h5 className="card-title">{project_task.summary}</h5>
           <p className="card-text text-truncate ">{project_task.acceptanceCriteria}</p>
-          <a href="" className="btn btn-primary">
+          <Link to={`updateProjectTask/${project_task.id}`} className="btn btn-primary">
             View / Update
-          </a>
+          </Link>
 
           <button
             className="btn btn-danger ml-4"
